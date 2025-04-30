@@ -6,12 +6,12 @@
   <footer>
     <div class="container">
       <nav class="footer_nav">
-        <a to="/about">Chi siamo</a>
-        <a to="/contact">Contatti</a>
-        <a to="/privacy">Privacy</a>
+        <a class="footer__link" to="/about">Chi siamo</a>
+        <a class="footer__link" to="/contact">Contatti</a>
+        <a class="footer__link" to="/privacy">Privacy</a>
       </nav>
       <div class="footer__actions">
-        <button @click="handleClick">Contattaci</button>
+        <button @click="handleClick" >Contattaci</button>
       </div>
     </div>
   </footer>
@@ -19,13 +19,13 @@
 
 <style scoped>
 footer {
-  background-color: lightslategrey;
+  background-color: rgb(92, 107, 122);
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-.footer__nav {
+.footer_nav {
   margin-bottom: 10px;
 }
 
@@ -44,14 +44,7 @@ footer {
   margin-top: 20px;
 }
 
-.footer_btn {
-  background-color: #007bff;
-  color: red;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
+
 
 .footer__button:hover {
   background-color: #0056b3;
