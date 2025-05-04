@@ -1,3 +1,12 @@
+<script lang="ts" setup>
+const emit = defineEmits(['openModal'])
+
+function handleClick (){
+emit('openModal')
+};
+</script>
+
+
 <template>
     <footer>
       <div class="container">
