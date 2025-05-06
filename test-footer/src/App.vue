@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Footer from "./components/Footer.vue";
+import Header from "./components/Header.vue";
 import Modal from "./components/Modal.vue";
 import {ref} from 'vue';
 
@@ -12,6 +13,7 @@ function showModal(): void {
 
 <template>
   <main>
+    <Header />
     <h1>Hello</h1>
     <Footer @open-modal="showModal"/>
   <Modal v-if="isShowModal" @close="isShowModal = false" />  
